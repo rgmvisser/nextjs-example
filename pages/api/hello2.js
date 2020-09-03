@@ -2,5 +2,5 @@
 
 export default (req, res) => {
   res.statusCode = 200;
-  res.json({ name: process.env.DOES_IT_WORK });
+  res.json({ name: process.env.DOES_IT_WORK2 });
 };
