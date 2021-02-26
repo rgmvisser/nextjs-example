@@ -1,0 +1,30 @@
+projects:
+  - name: MyProject
+    descriptions: My Project descriptions
+    environments:
+      - short_name: dev
+        name: Development
+        configs:
+          - short_name: dev
+          - short_name: dev_ruud
+      - short_name: ci
+        name: Continues Integration
+        condfigs:
+          - short_name: ci_bitbucket
+          - short_name: ci_github
+      - short_name: prod
+        name: Production
+        configs:
+          - short_name: prod
+          - short_name: prod_eu
+secrets:
+  - config: dev
+    secrets:
+      - key: MY_SECRET
+        value: NOT_SO_SECRET_VALUE
+      - key: SECRET_EMPTY
+  - config: ci_github
+    secrets:
+      - key: MY_SECRET
+        value: NOT_SO_SECRET_VALUE
+      - key: SECRET_EMPTY
