@@ -9,7 +9,7 @@ projects:
           - short_name: dev_ruud
       - short_name: ci
         name: Continues Integration
-        condfigs:
+        configs:
           - short_name: ci_bitbucket
           - short_name: ci_github
       - short_name: prod
