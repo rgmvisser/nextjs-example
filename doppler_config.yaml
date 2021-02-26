@@ -19,11 +19,9 @@ projects:
           - slug: prod
           - slug: prod_eu
     secrets:
-      - config: dev
-        secrets:
+      - dev:
           MY_SECRET: NOT_SO_SECRET_VALUE
           SECRET_EMPTY: ""
-      - config: ci_github
-        secrets:
+      - ci_github:
           MY_SECRET: NOT_SO_SECRET_VALUE
           SECRET_EMPTY: ""
