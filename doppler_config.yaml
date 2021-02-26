@@ -2,27 +2,28 @@ projects:
   - name: MyProject
     descriptions: My Project descriptions
     environments:
-      - short_name: dev
+      - slug: dev
         name: Development
         configs:
-          - short_name: dev
-          - short_name: dev_ruud
-      - short_name: ci
+          - slug: dev
+          - slug: dev_ruud
+      - slug: ci
         name: Continues Integration
         configs:
-          - short_name: ci_bitbucket
-          - short_name: ci_github
-      - short_name: prod
+          - slug: ci
+          - slug: ci_bitbucket
+          - slug: ci_github
+      - slug: prod
         name: Production
         configs:
-          - short_name: prod
-          - short_name: prod_eu
-secrets:
-  - config: dev
+          - slug: prod
+          - slug: prod_eu
     secrets:
-      MY_SECRET: NOT_SO_SECRET_VALUE
-      SECRET_EMPTY: ""
-  - config: ci_github
-    secrets:
-      MY_SECRET: NOT_SO_SECRET_VALUE
-      SECRET_EMPTY: ""
+      - config: dev
+        secrets:
+          MY_SECRET: NOT_SO_SECRET_VALUE
+          SECRET_EMPTY: ""
+      - config: ci_github
+        secrets:
+          MY_SECRET: NOT_SO_SECRET_VALUE
+          SECRET_EMPTY: ""
