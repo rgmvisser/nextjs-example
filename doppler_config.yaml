@@ -20,11 +20,9 @@ projects:
 secrets:
   - config: dev
     secrets:
-      - key: MY_SECRET
-        value: NOT_SO_SECRET_VALUE
-      - key: SECRET_EMPTY
+      MY_SECRET: NOT_SO_SECRET_VALUE
+      SECRET_EMPTY: ""
   - config: ci_github
     secrets:
-      - key: MY_SECRET
-        value: NOT_SO_SECRET_VALUE
-      - key: SECRET_EMPTY
+      MY_SECRET: NOT_SO_SECRET_VALUE
+      SECRET_EMPTY: ""
