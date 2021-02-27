@@ -5,8 +5,8 @@ projects:
       - slug: dev
         name: Development
         configs:
-          - slug: development
-          - slug: development_ruud
+          - slug: dev
+          - slug: dev_ruud
       - slug: ci
         name: Continues Integration
         configs:
@@ -17,15 +17,20 @@ projects:
         name: Preview
         configs:
           - slug: preview
-      - slug: production
+      - slug: prod
         name: Production
         configs:
           - slug: prod
           - slug: prod_eu
     secrets:
-      - development:
+      - dev:
           MY_SECRET: NOT_SO_SECRET_VALUE
           SECRET_EMPTY: ""
-      - preview:
+      - ci_github:
           MY_SECRET: NOT_SO_SECRET_VALUE
           SECRET_EMPTY: ""
+    integrations:
+      - vercel:
+          development: dev
+          preview: preview
+          production: prod
