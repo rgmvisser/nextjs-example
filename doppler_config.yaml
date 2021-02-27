@@ -23,12 +23,12 @@ projects:
           - slug: prod
           - slug: prod_eu
     secrets:
-      - dev:
-          MY_SECRET: NOT_SO_SECRET_VALUE
-          SECRET_EMPTY: ""
-      - ci_github:
-          MY_SECRET: NOT_SO_SECRET_VALUE
-          SECRET_EMPTY: ""
+      dev:
+        MY_SECRET: NOT_SO_SECRET_VALUE
+        SECRET_EMPTY: ""
+      ci_github:
+        MY_SECRET: NOT_SO_SECRET_VALUE
+        SECRET_EMPTY: ""
     integrations:
       - vercel:
           development: dev
