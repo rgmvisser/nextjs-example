@@ -5,23 +5,27 @@ projects:
       - slug: dev
         name: Development
         configs:
-          - slug: dev
-          - slug: dev_ruud
+          - slug: development
+          - slug: development_ruud
       - slug: ci
         name: Continues Integration
         configs:
           - slug: ci
           - slug: ci_bitbucket
           - slug: ci_github
-      - slug: prod
+      - slug: preview
+        name: Preview
+        configs:
+          - slug: preview
+      - slug: production
         name: Production
         configs:
           - slug: prod
           - slug: prod_eu
     secrets:
-      - dev:
+      - development:
           MY_SECRET: NOT_SO_SECRET_VALUE
           SECRET_EMPTY: ""
-      - ci_github:
+      - preview:
           MY_SECRET: NOT_SO_SECRET_VALUE
           SECRET_EMPTY: ""
