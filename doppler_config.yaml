@@ -13,7 +13,7 @@ projects:
           - slug: ci
           - slug: ci_bitbucket
           - slug: ci_github
-      - slug: slt
+      - slug: stg
         name: Staging
         configs:
           - slug: stg
