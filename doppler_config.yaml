@@ -2,26 +2,26 @@ projects:
   - name: MyProject
     descriptions: My Project descriptions
     environments:
-      - slug: dev
+      - id: dev
         name: Development
         configs:
-          - slug: dev
-          - slug: dev_ruud
-      - slug: ci
+          - id: dev
+          - id: dev_ruud
+      - id: ci
         name: Continues Integration
         configs:
-          - slug: ci
-          - slug: ci_bitbucket
-          - slug: ci_github
-      - slug: stg
+          - id: ci
+          - id: ci_bitbucket
+          - id: ci_github
+      - id: stg
         name: Staging
         configs:
-          - slug: stg
-      - slug: prod
+          - id: stg
+      - id: prod
         name: Production
         configs:
-          - slug: prod
-          - slug: prod_eu
+          - id: prod
+          - id: prod_eu
     secrets:
       dev:
         MY_SECRET: NOT_SO_SECRET_VALUE
