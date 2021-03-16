@@ -13,10 +13,10 @@ projects:
           - slug: ci
           - slug: ci_bitbucket
           - slug: ci_github
-      - slug: preview
-        name: Preview
+      - slug: slt
+        name: Staging
         configs:
-          - slug: preview
+          - slug: stg
       - slug: prod
         name: Production
         configs:
@@ -32,5 +32,5 @@ projects:
     integrations:
       - vercel:
           development: dev
-          preview: preview
+          preview: stg
           production: prod
