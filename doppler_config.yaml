@@ -1,6 +1,6 @@
 projects:
   - name: MyProject
-    descriptions: My Project descriptions
+    description: My Project descriptions
     environments:
       - slug: dev
         name: Development
